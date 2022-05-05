@@ -82,10 +82,10 @@ function Post({ id, username, userImg, img, caption }) {
         <div className="bg-white my-7 border rounded-sm">
 
             {/* Header */}
-        <div className="flex items-center p-5">
-            <img src={userImg} className="rounded-full h-12 w-12
-            object-contain border p-1 mr-3" alt="" />
-            <p className="flex-1 font-bold ">{username}</p>
+        <div className="flex items-center p-2">
+            <img src={userImg} className="rounded-full h-10 w-10
+            object-contain border-2 p-0.5 mr-3 border-red-500" alt="" />
+            <p className="flex-1 font-semibold ">{username}</p>
             <DotsHorizontalIcon className="h-5"/>
         </div>
             {/* img */}
@@ -116,7 +116,7 @@ function Post({ id, username, userImg, img, caption }) {
             {/* caption */}
             <p className="p-5 truncate">
                 {likes.length > 1 && (
-                    <p className="font-bold mb-1">{likes.length} likes</p>
+                    <p className="font-semibold mb-1">{likes.length} likes</p>
                 )} 
                 {/* { likes.length > 0 && (
                     <p className="font-bold mb-1">{session.data().username} liked your post</p>
@@ -124,7 +124,7 @@ function Post({ id, username, userImg, img, caption }) {
                 
 
                 
-                <span className="font-bold mr-2">{username}</span>
+                <span className="font-semibold mr-2">{username}</span>
                 {caption}
             </p>
             {/* comments */}
@@ -133,9 +133,9 @@ function Post({ id, username, userImg, img, caption }) {
                 scrollbar-thumb-black scrollbar-thin">
                     {comments.map(comment => (
                         <div key ={comment.id} className='flex items -center space-x-2 mb-3'>
-                            <img src={comment.data().userImage} className='h-7 rounded-full'/>
+                            {/* <img src={comment.data().userImage} className='h-7 rounded-full'/> */}
                             <p className="text-sm flex-1">
-                            <span className="font-bold ">
+                            <span className="font-semibold ">
                             {comment.data().username}
                             </span>{" "}
                             {comment.data().comment}
