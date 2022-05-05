@@ -11,7 +11,7 @@ export default function Home() {
      scrollbar-hide
     ">
       <Head>
-        <title>Instagram 2.0</title>
+        <title>Zyzzgram</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
