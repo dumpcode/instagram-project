@@ -79,7 +79,7 @@ function Post({ id, username, userImg, img, caption }) {
 
 
     return(
-        <div className="bg-white my-7 border rounded-sm">
+        <div className="bg-white my-7 border rounded-sm mx-5">
 
             {/* Header */}
         <div className="flex items-center p-2">
