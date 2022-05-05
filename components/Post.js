@@ -19,7 +19,7 @@ import { addDoc,
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
-import Moment from "react-moment";
+import {Moment} from "react-moment";
 import { data } from "autoprefixer";
 
 function Post({ id, username, userImg, img, caption }) {
