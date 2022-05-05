@@ -12,7 +12,7 @@ export default function Home() {
     ">
       <Head>
         <title>Zyzzgram</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/capital.ico" />
       </Head>
 
     {/* Header */}
